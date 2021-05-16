@@ -1,0 +1,41 @@
+body,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    padding: 1rem;
+    background-color: #111;
+}
+
+nav img {
+    width: 10%;
+}
+
+nav ul {
+    color: white;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    border: solid white;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
