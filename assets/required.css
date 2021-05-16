@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "California";
+    src: url("/fonts/California.woff2") format("woff2"),
+        url("/fonts/California.woff") format("woff"),
+        url("/fonts/California.otf") format("opentype"),
+        url("/fonts/California.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "The Bambank Script";
+    src: url("/fonts/The\ Bambank\ Script.woff2") format("woff2"),
+        url("/fonts/The\ Bambank\ Script.woff") format("woff"),
+        url("/fonts/The\ Bambank\ Script.otf") format("opentype"),
+        url("/fonts/The\ Bambank\ Script.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Vignettic";
+    src: url("/fonts/Vignettic.woff2") format("woff2"),
+        url("/fonts/Vignettic.woff") format("woff"),
+        url("/fonts/Vignettic.otf") format("opentype"),
+        url("/fonts/Vignettic.ttf") format("truetype");
+}
+
+body,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Reem Kufi", sans-serif;
+}
