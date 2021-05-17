@@ -1,7 +1,7 @@
 // Var
 const nav = document.querySelector("nav");
 const header = document.querySelector("header");
-const section = document.querySelector("section");
+const navCheck = document.querySelector(".navCheck");
 
 
 function ElementVue(e) {
@@ -14,7 +14,7 @@ function ElementVue(e) {
 
 window.addEventListener("scroll", function (e) {
 
-    if (ElementVue(section) == true) {
+    if (ElementVue(navCheck) == true) {
         nav.style.backgroundColor = "rgba(17, 17, 17, 1)";
     } else {
         nav.style.backgroundColor = "rgba(17, 17, 17, 0)";
