@@ -86,8 +86,24 @@ section {
     transition: all 0.25s ease;
 }
 
+.imgList div::before {
+    content: var(--name);
+    position: absolute;
+    font-size: 1.5vw;
+    text-align: center;
+    color: black;
+    font-family: "California", sans-serif;
+    z-index: 2;
+    top: 101%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
 .imgList div:hover {
-    border-bottom: solid wheat 50px;
+    border-bottom: solid wheat 3vw;
     transform: scale(1.1);
     box-shadow: 5px 5px 20px black;
 }
@@ -96,6 +112,10 @@ section {
     top: -15%;
     left: 60%;
     transform: translateX(-50%) scale(.75);
+}
+
+.imgList div:hover:before {
+    opacity: 1;
 }
 
 #don {
@@ -120,4 +140,10 @@ section {
     background-image: url(../medias/bernieLeadon.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.members p {
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 100%;
 }

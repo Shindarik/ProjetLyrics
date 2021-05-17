@@ -10,6 +10,7 @@ nav {
     padding: 1.5rem;
     z-index: 10;
     background-color: rgba(17, 17, 17, 0);
+    border-bottom: groove rgb(0, 121, 202) 0px;
     transition: all 0.25s ease;
     font-family: "Vignettic", sans-serif;
 }
