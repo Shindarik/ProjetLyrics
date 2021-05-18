@@ -1,3 +1,171 @@
-body {
-    background-color: #111;
+.container {
+    background-color: rgba(8, 4, 0, 0.7);
+    background-image: url(../medias/hotelWall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    height: 40vw;
+    width: 60%;
+    background-image: url(../medias/tableauLiege.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.albumCover {
+    position: absolute;
+    z-index: 2;
+    top: 13%;
+    right: 10%;
+    width: 10vw;
+    height: 10vw;
+    background-image: url(../medias/albumCover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid wheat .75vw;
+    box-shadow: 7px 10px 25px rgba(0, 0, 0, 0.5);
+    transform: rotateZ(13deg);
+}
+
+.albumCover::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: -22%;
+    right: 50%;
+    width: 40%;
+    height: 40%;
+    -webkit-filter: sepia(40%);
+    filter: sepia(40%);
+    background-image: url(../medias/pins.png);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.25s ease;
+    transform: rotateZ(-20deg) translateX(65%);
+
+}
+
+.jail {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    right: 29%;
+    width: 10vw;
+    height: 10vw;
+    background-image: url(../medias/prison.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid wheat .75vw;
+    box-shadow: 7px 10px 25px rgba(0, 0, 0, 0.5);
+    transform: rotateZ(-7deg);
+}
+
+.jail:after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: -12%;
+    right: 50%;
+    width: 40%;
+    height: 40%;
+    -webkit-filter: sepia(40%);
+    filter: sepia(40%);
+    background-image: url(../medias/pins.png);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.25s ease;
+    transform: rotateZ(-50deg) translateX(65%);
+}
+
+#hotelPins {
+    position: absolute;
+    z-index: 2;
+    bottom: 32%;
+    right: 10%;
+    width: 7vw;
+    height: 7vw;
+    transform: rotateZ(6deg);
+}
+
+
+.pageBlanche {
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    left: 10%;
+    width: 24vw;
+    height: 35vw;
+    background-image: url(../medias/pageBlanche.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateZ(-8deg);
+
+}
+
+#eaglesPatch {
+    position: absolute;
+    z-index: 2;
+    bottom: 12%;
+    right: 16%;
+    width: 6vw;
+    height: 5vw;
+}
+
+.pageBlanche:after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 8%;
+    right: 0%;
+    width: 20%;
+    height: 5%;
+    background-image: url(../medias/Sticker.png);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.25s ease;
+    transform: rotateZ(18deg);
+}
+
+.pageBlanche:before {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    bottom: 12%;
+    left: -3%;
+    width: 20%;
+    height: 5%;
+    background-image: url(../medias/Sticker.png);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.25s ease;
+    transform: rotateZ(25deg);
+}
+
+.board p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 13%;
+    left: 15%;
+    z-index: 3;
+    width: 17vw;
+    height: 24vw;
+    text-align: center;
+    transform: rotateZ(-3deg);
+    mix-blend-mode: multiply;
+    overflow: auto;
 }
