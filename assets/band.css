@@ -1,4 +1,5 @@
 .container {
+    position: relative;
     background-color: rgba(0, 0, 0, 0.7);
     background-image: url(../medias/woodTexture.jpg);
     background-size: cover;
@@ -12,7 +13,24 @@
     align-items: center;
 }
 
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: -20%;
+    z-index: 0;
+    height: 55vw;
+    width: 55vw;
+    -webkit-filter: blur(2px) sepia(30%) saturate(150%);
+    filter: blur(2px) sepia(30%) saturate(150%);
+    background-image: url(../medias/guitareAcc.png);
+    background-size: cover;
+    transform: rotateZ(-20deg);
+}
+
 section {
+    position: relative;
+    z-index: 1;
     width: 90%;
     margin-top: 150px;
     color: white;

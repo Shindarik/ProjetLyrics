@@ -6,7 +6,7 @@ const navCheck = document.querySelector(".navCheck");
 function ElementVue(e) {
     const rect = e.getBoundingClientRect();
     return (
-        rect.top <= (window.innerHeight / 2)
+        rect.bottom <= (window.innerHeight / 2)
     );
 }
 
