@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container::before {
@@ -19,12 +20,28 @@
     top: 0%;
     right: -20%;
     z-index: 0;
-    height: 55vw;
+    height: 56vw;
     width: 55vw;
     -webkit-filter: blur(2px) sepia(30%) saturate(150%);
     filter: blur(2px) sepia(30%) saturate(150%);
     background-image: url(../medias/guitareAcc.png);
     background-size: cover;
+    transform: rotateZ(-20deg);
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: -15%;
+    z-index: 0;
+    height: 65vw;
+    width: 40vw;
+    -webkit-filter: blur(2px) sepia(30%) saturate(150%);
+    filter: blur(2px) sepia(30%) saturate(150%);
+    background-image: url(../medias/guitareElec.png);
+    background-size: cover;
+    background-position: center;
     transform: rotateZ(-20deg);
 }
 
