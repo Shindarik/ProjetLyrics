@@ -174,3 +174,12 @@
     mix-blend-mode: multiply;
     overflow: auto;
 }
+
+.cadres {
+    position: relative;
+    z-index: 1;
+    height: 40vw;
+    width: 80%;
+    margin-bottom: 100px;
+    border: solid red;
+}
