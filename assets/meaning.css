@@ -174,7 +174,7 @@
 
 .board p {
     position: absolute;
-    top: 13%;
+    top: 15%;
     left: 15%;
     z-index: 3;
     width: 17vw;
@@ -191,5 +191,64 @@
     height: 40vw;
     width: 80%;
     margin-bottom: 100px;
-    border: solid red;
+}
+
+.tableauBlanc {
+    position: absolute;
+    width: 55%;
+    height: 70%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-image: url(../medias/tableauBlanc.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.cadres p {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 85%;
+    height: 16.5vw;
+    text-align: justify;
+    mix-blend-mode: multiply;
+    overflow: auto;
+    padding: 1rem;
+}
+
+#cadre1 {
+    position: absolute;
+    z-index: 2;
+    top: 8%;
+    left: 5%;
+    width: 20%;
+}
+
+#cadre2 {
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 28%;
+    width: 15%;
+}
+
+#plaqueHotel {
+    position: absolute;
+    z-index: 2;
+    bottom: 5%;
+    left: 8%;
+    width: 25%;
+    -webkit-filter: saturate(200%) sepia(30%);
+    filter: saturate(200%) sepia(30%);
+}
+
+.container a {
+    color: orangered;
+}
+
+.container a:visited {
+    color: orangered;
 }

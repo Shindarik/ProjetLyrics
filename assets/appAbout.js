@@ -1,13 +1,12 @@
 // Var
 const nav = document.querySelector("nav");
 const navCheck = document.querySelector(".navCheck");
-const polaroid = document.querySelectorAll(".imgList div");
-const bio = document.querySelector(".members p");
+
 
 function ElementVue(e) {
     const rect = e.getBoundingClientRect();
     return (
-        rect.top <= (window.innerHeight / 2)
+        rect.bottom <= (window.innerHeight / 2)
     );
 }
 
@@ -23,18 +22,4 @@ window.addEventListener("scroll", function (e) {
         nav.style.backgroundImage = "none";
         nav.style.borderBottom = "none";
     }
-});
-
-polaroid.forEach(element => {
-
-    element.addEventListener("mouseenter", function(){
-        bio.textContent = this.getAttribute("data-texte");
-        bio.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-    });
-
-    element.addEventListener("mouseleave", function(){
-        bio.textContent = "";
-        bio.style.backgroundColor = "rgba(0, 0, 0, 0)";
-    });
-    
 });
