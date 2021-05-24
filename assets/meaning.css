@@ -1,4 +1,5 @@
 .container {
+    position: relative;
     background-color: rgba(8, 4, 0, 0.7);
     background-image: url(../medias/hotelWall.jpg);
     background-size: cover;
@@ -10,6 +11,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.container::after {
+    content: '';
+    width: 100%;
+    height: 10vw;
+    background-image: url(../medias/bureauKey.png);
+    background-size: cover;
+    background-position: 0 25%;
 }
 
 #plaque {
