@@ -1,6 +1,8 @@
 // Var
 const nav = document.querySelector("nav");
 const navCheck = document.querySelector(".navCheck");
+const cloche = document.querySelector(".cloche");
+var audio = new Audio('../medias/cloche.mp3');
 
 
 function ElementVue(e) {
@@ -23,3 +25,7 @@ window.addEventListener("scroll", function (e) {
         nav.style.borderBottom = "none";
     }
 });
+
+cloche.addEventListener("click", function(){
+    audio.play();
+})
