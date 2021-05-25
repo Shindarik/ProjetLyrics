@@ -1,3 +1,25 @@
 body {
-    background-color: #111;
+    position: relative;
+    background-color: rgba(8, 4, 0, 0.7);
+    background-image: url(../medias/walltexture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    /* background-attachment: fixed; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.journal {
+    width: 30vw;
+    height: 40vw;
+    border: solid 5px whitesmoke;
+    background-image: url(../medias/journal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: skew(5deg);
+    box-shadow: 5px 5px 10px black;
 }
