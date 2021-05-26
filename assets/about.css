@@ -8,8 +8,8 @@ body {
     /* background-attachment: fixed; */
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -21,5 +21,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     transform: skew(5deg);
-    box-shadow: 5px 5px 10px black;
+    box-shadow: -10px 10px 10px black;
+}
+
+.aboutMe {
+    border: solid red;
+    color: white;
+    width: 40%;
 }
