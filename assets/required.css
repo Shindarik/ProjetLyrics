@@ -60,3 +60,18 @@ body {
     margin: 0;
     font-family: "Reem Kufi", sans-serif;
 }
+
+.player {
+    position: fixed;
+    z-index: 11;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player:focus {
+    outline: none;
+}

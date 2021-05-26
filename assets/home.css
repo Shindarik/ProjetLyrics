@@ -35,21 +35,6 @@ header h2 {
     font-size: 2vw;
 }
 
-.player {
-    position: fixed;
-    z-index: 11;
-    bottom: 0;
-    right: 0;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.player:focus {
-    outline: none;
-}
-
 .lyrics {
     position: relative;
     margin: 0;
