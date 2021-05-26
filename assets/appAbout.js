@@ -1,6 +1,8 @@
 // Var
 const nav = document.querySelector("nav");
 const navCheck = document.querySelector(".navCheck");
+const body = document.querySelector("body");
+const journal = document.querySelector(".journal");
 
 
 function ElementVue(e) {
@@ -22,4 +24,8 @@ window.addEventListener("scroll", function (e) {
         nav.style.backgroundImage = "none";
         nav.style.borderBottom = "none";
     }
+});
+
+journal.addEventListener("click", function(){
+    body.classList.toggle("active");
 });
