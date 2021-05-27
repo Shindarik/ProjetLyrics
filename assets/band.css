@@ -56,6 +56,12 @@ section {
     align-items: center;
 }
 
+.bandDescription div {
+    max-height: 60vh;
+    overflow: auto;
+    padding: 0 1rem;
+}
+
 .bandDescription img {
     float: left;
     width: 500px;
