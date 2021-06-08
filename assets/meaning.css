@@ -1,3 +1,33 @@
+html::-webkit-scrollbar {
+    width: 15px;
+    background: #111;
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: orangered;
+}
+
+html *::-webkit-scrollbar {
+    width: 15px;
+    background: transparent;
+    width: 10px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    background-color: #111;
+    border-radius: 50px;
+}
+
+html *::-webkit-scrollbar-thumb:hover {
+    background-color: orangered;
+}
+
 .container {
     position: relative;
     background-color: rgba(8, 4, 0, 0.7);

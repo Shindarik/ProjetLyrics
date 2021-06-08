@@ -31,17 +31,17 @@
 
 ::-webkit-scrollbar {
     width: 15px;
-    background: white;
+    background: #111;
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #111;
+    background-color: #fff;
     border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #111;
+    background-color: orangered;
 }
 
 * {
