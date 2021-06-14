@@ -17,6 +17,36 @@ body.active * {
     pointer-events: none;
 }
 
+.source {
+    position: absolute;
+    right: 2%;
+    top: 6%;
+    z-index: 100;
+    display: none;
+    width: 30vw;
+    height: 80vh;
+    color: white;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.source a {
+    color: orangered;
+}
+
+.source li {
+    margin: 20px 0;
+}
+
+body.active .source {
+    pointer-events: initial;
+    display: initial;
+}
+
+body.active .source a {
+    pointer-events: initial;
+}
+
 .bgBlack {
     position: absolute;
     z-index: 99;
