@@ -68,6 +68,7 @@ body.active .bgBlack {
 .journal {
     width: 30vw;
     height: 40vw;
+    cursor: pointer;
     border: solid 5px whitesmoke;
     background-image: url(../medias/journal.png);
     background-size: cover;
